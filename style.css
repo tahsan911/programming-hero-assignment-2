@@ -1,0 +1,34 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+/* normal css style */
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+/* navbar design here */
+
+/* header design here */
+
+/* second area here */
+
+/* third area here  */
+
+/* footer area here  */
+
+/* responsive design here */
+
+/* mobile device */
+
+@media screen (max-width: 668px) {
+  /* your additional css here  */
+}
+
+/* tab device view  */
+
+@media screen (max-width: 992px) {
+  /* your additional css here */
+}
+
+/* laptop device here */
+@media screen (max-width: 1332px) {
+}
