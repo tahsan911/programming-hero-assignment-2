@@ -3,14 +3,64 @@
 /* normal css style */
 body {
   font-family: "Poppins", sans-serif;
+  background-color: #f1eded;
 }
-
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 25px 120px;
+}
+/* Logo design here */
+.logo > h3 {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 36px;
+  color: #3a3a3a;
+}
 /* navbar design here */
-
+ul {
+  display: flex;
+}
+li {
+  list-style-type: none;
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  color: #3a3a3a;
+  margin: 0 15px;
+  transition: 0.5s ease;
+  cursor: pointer;
+}
+li:hover {
+  transform: scale(1.5);
+}
+.fas {
+  font-size: 20px;
+  font-weight: thin;
+  transition: 0.5s ease;
+}
 /* header design here */
 
 /* second area here */
-
+.section-1 {
+  flex-direction: column;
+}
+.section-1-h1 {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 52px;
+  line-height: 70px;
+  color: #3a3a3a;
+}
+.right img {
+  width: 100%;
+}
 /* third area here  */
 
 /* footer area here  */
