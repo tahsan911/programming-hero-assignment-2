@@ -6,6 +6,7 @@ body {
   background-color: #ffffff;
   margin: 0;
   padding: 0;
+  overflow-x: hidden;
 }
 
 .container {
@@ -14,6 +15,7 @@ body {
   justify-content: space-between;
   margin: 25px 130px;
 }
+
 button {
   color: white;
   font-weight: 700;
@@ -68,9 +70,26 @@ li:hover {
   transition: 0.5s ease;
 }
 /* header design here */
-
-/* second area here */
 .section-1 {
+  min-height: 70vh;
+  width: 100vw;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+/* second area here */
+.left {
+  width: 50vw;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding-left: 8%;
+  padding-right: 6%;
+}
+.right {
+  height: 100%;
+  width: 50vw;
   display: flex;
   align-items: center;
 }
@@ -107,6 +126,12 @@ li:hover {
 }
 
 /* fourth area here  */
+.product-container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
 .card-container {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -116,7 +141,7 @@ li:hover {
   display: flex;
   flex-direction: column;
   width: 329px;
-  height: 476px;
+  min-height: 500px;
   box-shadow: 0px 0px 40px gray;
   transition: 0.5s ease;
   border-radius: 10px;
@@ -182,7 +207,7 @@ small {
 }
 .form-right img {
   width: 100%;
-  height: 410px;
+  height: 100%;
 }
 .form-left {
   width: 100%;
@@ -235,6 +260,45 @@ small {
 .fab {
   cursor: pointer;
 }
-/* responsive design here */
 
-/* mobile device */
+/* responsive area */
+
+@media only screen and (min-width: 667px) and (max-width: 992px) {
+  .section-1 {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    margin: 5% 0;
+  }
+  .right {
+    width: 100%;
+    margin-bottom: 5%;
+  }
+  .right img {
+    width: 250px;
+    height: 250px;
+    margin: auto;
+  }
+  .left {
+    width: 100%;
+    text-align: center;
+    align-items: center;
+  }
+  .logo h3 {
+    position: relative;
+    left: 37%;
+  }
+  .card {
+    margin: 10px auto;
+  }
+  .card-container {
+    grid-template-columns: repeat(2, 1fr);
+    width: 100vw;
+  }
+  .see-more-div;
+}
+@media only screen and (max-width: 667px) {
+  .card-container {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
