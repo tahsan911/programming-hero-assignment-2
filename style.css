@@ -238,7 +238,7 @@ small {
 /* responsive design here */
 
 /* mobile device */
-@media (min-width: 576px) {
+@media (max-width: 576px) {
   .logo h3 {
     position: relative;
     left: 174px;
